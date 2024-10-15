@@ -1,55 +1,826 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gamazen - Games</title>
-    <link rel="stylesheet" href="style.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Xmiro - Online Gaming HTML Template</title>
+
+    <link rel="shortcut icon" href="assets/images/fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.css">
+    <link rel="stylesheet" href="assets/css/plugin/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/plugin/slick.css">
+    <link rel="stylesheet" href="assets/css/arafat-font.css">
+    <link rel="stylesheet" href="assets/css/plugin/animate.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <h1>Gamazen</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="games.html">Games</a></li>
-                    <li><a href="privacy.html">Privacy Policy</a></li>
-                </ul>
-            </nav>
+    <!-- start preloader -->
+    <div class="preloader" id="preloader"></div>
+    <!-- end preloader -->
+
+    <!-- Scroll To Top Start-->
+    <a href="javascript:void(0)" class="scrollToTop"><i class="fas fa-angle-double-up"></i></a>
+    <!-- Scroll To Top End -->
+
+    <!-- header-section start -->
+    <header class="header-section">
+        <div class="overlay">
+            <div class="container">
+                <div class="row d-flex header-area">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="assets/images/logo.png" class="logo" alt="logo">
+                        </a>
+                        <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-content">
+                            <i class="fas fa-bars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-between" id="navbar-content">
+                            <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+                                <li class="nav-item dropdown main-navbar">
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Home</a>
+                                    <ul class="dropdown-menu main-menu shadow show">
+                                        <li><a class="nav-link" href="index.html">Home 01</a></li>
+                                        <li><a class="nav-link" href="index-2.html">Home 02</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown main-navbar">
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Games</a>
+                                    <ul class="dropdown-menu main-menu shadow show">
+                                        <li><a class="nav-link" href="games.html">Games</a></li>
+                                        <li><a class="nav-link" href="games-single.html">Games Single</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown main-navbar">
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Pages</a>
+                                    <ul class="dropdown-menu main-menu shadow show">
+                                        <li><a class="nav-link" href="about-us.html">About Us</a></li>
+                                        <li class="dropend sub-navbar">
+                                            <a href="javascript:void(0)" class="dropdown-item dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="outside">Careers</a>
+                                            <ul class="dropdown-menu sub-menu shadow show">
+                                                <li><a class="nav-link" href="careers.html">Careers 01</a></li>
+                                                <li><a class="nav-link" href="careers-2.html">Careers 02</a></li>
+                                                <li><a class="nav-link" href="careers-details.html">Careers Details</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a class="nav-link" href="faqs.html">FAQs</a></li>
+                                        <li><a class="nav-link" href="terms-conditions.html">Terms Conditions</a></li>
+                                        <li><a class="nav-link" href="privacy-policy.html">Privacy Policy</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown main-navbar">
+                                    <a class="nav-link dropdown-toggle" href="javascript:void(0)" data-bs-toggle="dropdown" data-bs-auto-close="outside">Blog</a>
+                                    <ul class="dropdown-menu main-menu shadow show">
+                                        <li><a class="nav-link" href="blog.html">Blog</a></li>
+                                        <li><a class="nav-link" href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                            <div class="right-area gap-4 header-action d-flex align-items-center max-un">
+                                <button type="button" class="login" data-bs-toggle="modal" data-bs-target="#loginMod">
+                                    Sign In
+                                </button>
+                                <button type="button" class="cmn-btn reg" data-bs-toggle="modal"
+                                    data-bs-target="#loginMod">
+                                    Sign Up
+                                </button>
+                            </div>
+                        </div>
+                    </nav>
+
+                </div>
+            </div>
         </div>
     </header>
+    <!-- header-section end -->
 
-    <!-- Games Section -->
-    <section class="games">
+    <!-- Login Registration start -->
+    <div class="log-reg">
         <div class="container">
-            <h2>Our Games</h2>
-            <div class="games-grid">
-                <div class="game">
-                    <img src="game1.jpg" alt="Game 1">
-                    <h3>Game 1</h3>
-                    <p>Available on <a href="#">App Store</a> | <a href="#">Google Play</a></p>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="modal fade" id="loginMod">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header justify-content-center">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <ul class="nav log-reg-btn d-none justify-content-around">
+                                    <li class="bottom-area" role="presentation">
+                                        <button class="nav-link" id="regArea-tab" data-bs-toggle="tab"
+                                            data-bs-target="#regArea" type="button" role="tab" aria-controls="regArea"
+                                            aria-selected="false">
+                                            SIGN UP
+                                        </button>
+                                    </li>
+                                    <li class="bottom-area" role="presentation">
+                                        <button class="nav-link active" id="loginArea-tab" data-bs-toggle="tab"
+                                            data-bs-target="#loginArea" type="button" role="tab"
+                                            aria-controls="loginArea" aria-selected="true">
+                                            LOGIN
+                                        </button>
+                                    </li>
+                                </ul>
+                                <div class="tab-content">
+                                    <div class="tab-pane fade show active" id="loginArea" role="tabpanel"
+                                        aria-labelledby="loginArea-tab">
+                                        <div class="login-reg-content">
+                                            <div class="modal-body">
+                                                <div class="form-area">
+                                                    <form action="#">
+                                                        <div class="section-text text-center">
+                                                            <h3 class="sub-title title">Welcome Back</h3>
+                                                            <p>Not a member ? <a href="javascript:void(0)" class="reg-btn">Register</a></p>
+                                                        </div>
+                                                        <div class="input-area d-flex align-items-center">
+                                                            <img src="assets/images/icon/email-icon.png" alt="icon">
+                                                            <input type="text" placeholder="Email">
+                                                        </div>
+                                                        <div class="input-area d-flex align-items-center">
+                                                            <img src="assets/images/icon/security.png" alt="icon">
+                                                            <input type="text" placeholder="Password">
+                                                        </div>
+                                                        <div class="checkbox-item d-flex justify-content-between">
+                                                            <label class="checkbox-single d-flex align-items-center">
+                                                                <span class="content-area">
+                                                                    <span class="checkbox-area d-flex">
+                                                                        <input type="checkbox">
+                                                                        <span class="checkmark"></span>
+                                                                    </span>
+                                                                    <span class="item-title d-flex align-items-center">
+                                                                        <span>Remember me</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                            <a href="javascript:void(0)">Forget Password</a>
+                                                        </div>
+                                                        <div class="btn-area text-center">
+                                                            <a href="javascript:void(0)" class="cmn-btn mt-3">Login</a>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tab-pane fade" id="regArea" role="tabpanel"
+                                        aria-labelledby="regArea-tab">
+                                        <div class="login-reg-content regMode">
+                                            <div class="modal-body">
+                                                <div class="form-area">
+                                                    <form action="#">
+                                                        <div class="section-text text-center">
+                                                            <h5 class="sub-title">Ready to get started?</h5>
+                                                            <h3 class="title">Welcome to Xmiro</h3>
+                                                            <p>Already have an account? <a href="javascript:void(0)" class="log-btn">Login</a></p>
+                                                        </div>
+                                                        <div class="input-area d-flex align-items-center">
+                                                            <img src="assets/images/icon/email-icon.png" alt="icon">
+                                                            <input type="text" placeholder="Email">
+                                                        </div>
+                                                        <div class="input-area d-flex align-items-center">
+                                                            <img src="assets/images/icon/security.png" alt="icon">
+                                                            <input type="text" placeholder="Password">
+                                                        </div>
+                                                        <div class="sidebar-single-item">
+                                                            <label class="checkbox-single d-flex">
+                                                                <span class="content-area">
+                                                                    <span class="checkbox-area d-flex">
+                                                                        <input type="checkbox" checked="checked">
+                                                                        <span class="checkmark"></span>
+                                                                    </span>
+                                                                    <span class="item-title d-flex align-items-center">
+                                                                        <span>I agreed to the <a href="javascript:void(0)">Privacy Policy</a>, <a href="javascript:void(0)">Terms and Conditions</a></span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                            <label class="checkbox-single d-flex align-items-center">
+                                                                <span class="content-area">
+                                                                    <span class="checkbox-area d-flex">
+                                                                        <input type="checkbox">
+                                                                        <span class="checkmark"></span>
+                                                                    </span>
+                                                                    <span class="item-title d-flex align-items-center">
+                                                                        <span>I want to receive promotions by e-mail.</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                            <div class="btn-area text-center">
+                                                                <a href="javascript:void(0)" class="cmn-btn mt-3">Get Start Now</a>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="game">
-                    <img src="game2.jpg" alt="Game 2">
-                    <h3>Game 2</h3>
-                    <p>Available on <a href="#">App Store</a> | <a href="#">Google Play</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Login Registration end -->
+
+    <!-- Banner Section start -->
+    <section class="banner-section inner-banner games">
+        <div class="overlay">
+            <div class="banner-content position-relative">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-10">
+                            <div class="main-content">
+                                <h1>Games</h1>
+                                <div class="breadcrumb-area">
+                                    <nav aria-label="breadcrumb">
+                                        <ol class="breadcrumb d-flex align-items-center">
+                                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                            <li class="breadcrumb-item active" aria-current="page">Games</li>
+                                        </ol>
+                                    </nav>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-10">
+                            <div class="img-area position-absolute">
+                                <img src="assets/images/games-banner-illus.png" alt="image">
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <!-- Add more games as needed -->
             </div>
         </div>
     </section>
+    <!-- Banner Section end -->
 
-    <!-- Footer -->
-    <footer>
+    <!-- Feature Games start -->
+    <section class="feature-games">
+        <div class="overlay pt-120 pb-120">
+            <div class="container wow">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-header text-center">
+                            <h5 class="sub-title">Magic for all ages</h5>
+                            <h2 class="title">Featured Games</h2>
+                            <p>We believe in creating and publishing amazingly fun games! Have a look to our featured games below.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cus-mar">
+                    <div class="col-xl-6 col-lg-9">
+                        <div class="single-box d-flex align-items-center">
+                            <div class="app-download">
+                                <div class="img-area">
+                                    <img class="w-100" src="assets/images/game-image-1.png" alt="image">
+                                </div>
+                                <p class="mdr">Download Now at</p>
+                                <div class="d-grid gap-2">
+                                    <a href="#"><img src="assets/images/app-store.png" alt="image"></a>
+                                    <a href="#"><img src="assets/images/play-store.png" alt="image"></a>
+                                </div>
+                            </div>
+                            <div class="content-area">
+                                <h4 class="m-0">Nerf Epic Pranks</h4>
+                                <div class="info-area d-flex justify-content-sm-between justify-content-start align-items-center">
+                                    <div class="single-info">
+                                        <h5>50M</h5>
+                                        <p class="mdr">Installs</p>
+                                    </div>
+                                    <div class="single-info border-area">
+                                        <h5>4.3<i class="fas fa-star"></i></h5>
+                                        <p class="mdr">163k reviews</p>
+                                    </div>
+                                    <div class="single-info">
+                                        <h5>#1 US</h5>
+                                        <p class="mdr">Play Store</p>
+                                    </div>
+                                </div>
+                                <div class="details-area">
+                                    <p>Can you tag everyone without getting caught?Grab your ... <a href="#">read more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-9">
+                        <div class="single-box d-flex align-items-center">
+                            <div class="app-download">
+                                <div class="img-area">
+                                    <img class="w-100" src="assets/images/game-image-2.png" alt="image">
+                                </div>
+                                <p class="mdr">Download Now at</p>
+                                <div class="d-grid gap-2">
+                                    <a href="#"><img src="assets/images/app-store.png" alt="image"></a>
+                                    <a href="#"><img src="assets/images/play-store.png" alt="image"></a>
+                                </div>
+                            </div>
+                            <div class="content-area">
+                                <h4 class="m-0">Sky Roller</h4>
+                                <div class="info-area d-flex justify-content-sm-between justify-content-start align-items-center">
+                                    <div class="single-info">
+                                        <h5>80M</h5>
+                                        <p class="mdr">Installs</p>
+                                    </div>
+                                    <div class="single-info border-area">
+                                        <h5>4.3<i class="fas fa-star"></i></h5>
+                                        <p class="mdr">163k reviews</p>
+                                    </div>
+                                    <div class="single-info">
+                                        <h5>#2 US</h5>
+                                        <p class="mdr">Play Store</p>
+                                    </div>
+                                </div>
+                                <div class="details-area">
+                                    <p>Can you tag everyone without getting caught?Grab your ... <a href="#">read more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-9">
+                        <div class="single-box d-flex align-items-center">
+                            <div class="app-download">
+                                <div class="img-area">
+                                    <img class="w-100" src="assets/images/game-image-4.png" alt="image">
+                                </div>
+                                <p class="mdr">Download Now at</p>
+                                <div class="d-grid gap-2">
+                                    <a href="#"><img src="assets/images/app-store.png" alt="image"></a>
+                                    <a href="#"><img src="assets/images/play-store.png" alt="image"></a>
+                                </div>
+                            </div>
+                            <div class="content-area">
+                                <h4 class="m-0">Little Panda's Farm</h4>
+                                <div class="info-area d-flex justify-content-sm-between justify-content-start align-items-center">
+                                    <div class="single-info">
+                                        <h5>50M</h5>
+                                        <p class="mdr">Installs</p>
+                                    </div>
+                                    <div class="single-info border-area">
+                                        <h5>4.3<i class="fas fa-star"></i></h5>
+                                        <p class="mdr">163k reviews</p>
+                                    </div>
+                                    <div class="single-info">
+                                        <h5>#1 US</h5>
+                                        <p class="mdr">Play Store</p>
+                                    </div>
+                                </div>
+                                <div class="details-area">
+                                    <p>Little Panda's Farm is available! You can cook gourmet, ... <a href="#">read more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-9">
+                        <div class="single-box d-flex align-items-center">
+                            <div class="app-download">
+                                <div class="img-area">
+                                    <img class="w-100" src="assets/images/game-image-3.png" alt="image">
+                                </div>
+                                <p class="mdr">Download Now at</p>
+                                <div class="d-grid gap-2">
+                                    <a href="#"><img src="assets/images/app-store.png" alt="image"></a>
+                                    <a href="#"><img src="assets/images/play-store.png" alt="image"></a>
+                                </div>
+                            </div>
+                            <div class="content-area">
+                                <h4 class="m-0">Race Master 3D</h4>
+                                <div class="info-area d-flex justify-content-sm-between justify-content-start align-items-center">
+                                    <div class="single-info">
+                                        <h5>50M</h5>
+                                        <p class="mdr">Installs</p>
+                                    </div>
+                                    <div class="single-info border-area">
+                                        <h5>4.3<i class="fas fa-star"></i></h5>
+                                        <p class="mdr">163k reviews</p>
+                                    </div>
+                                    <div class="single-info">
+                                        <h5>#2 US</h5>
+                                        <p class="mdr">Play Store</p>
+                                    </div>
+                                </div>
+                                <div class="details-area">
+                                    <p>Keep your finger to the floor and be ready for absolutely ... <a href="#">read more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-9">
+                        <div class="single-box d-flex align-items-center">
+                            <div class="app-download">
+                                <div class="img-area">
+                                    <img class="w-100" src="assets/images/game-image-5.png" alt="image">
+                                </div>
+                                <p class="mdr">Download Now at</p>
+                                <div class="d-grid gap-2">
+                                    <a href="#"><img src="assets/images/app-store.png" alt="image"></a>
+                                    <a href="#"><img src="assets/images/play-store.png" alt="image"></a>
+                                </div>
+                            </div>
+                            <div class="content-area">
+                                <h4 class="m-0">Ice Cream Challenge</h4>
+                                <div class="info-area d-flex justify-content-sm-between justify-content-start align-items-center">
+                                    <div class="single-info">
+                                        <h5>50M</h5>
+                                        <p class="mdr">Installs</p>
+                                    </div>
+                                    <div class="single-info border-area">
+                                        <h5>4.3<i class="fas fa-star"></i></h5>
+                                        <p class="mdr">163k reviews</p>
+                                    </div>
+                                    <div class="single-info">
+                                        <h5>#1 US</h5>
+                                        <p class="mdr">Play Store</p>
+                                    </div>
+                                </div>
+                                <div class="details-area">
+                                    <p>Ice Cream Challenge, a match three game. Put three, ... <a href="#">read more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-9">
+                        <div class="single-box d-flex align-items-center">
+                            <div class="app-download">
+                                <div class="img-area">
+                                    <img class="w-100" src="assets/images/game-image-6.png" alt="image">
+                                </div>
+                                <p class="mdr">Download Now at</p>
+                                <div class="d-grid gap-2">
+                                    <a href="#"><img src="assets/images/app-store.png" alt="image"></a>
+                                    <a href="#"><img src="assets/images/play-store.png" alt="image"></a>
+                                </div>
+                            </div>
+                            <div class="content-area">
+                                <h4 class="m-0">Gemmy Lands</h4>
+                                <div class="info-area d-flex justify-content-sm-between justify-content-start align-items-center">
+                                    <div class="single-info">
+                                        <h5>50M</h5>
+                                        <p class="mdr">Installs</p>
+                                    </div>
+                                    <div class="single-info border-area">
+                                        <h5>4.3<i class="fas fa-star"></i></h5>
+                                        <p class="mdr">163k reviews</p>
+                                    </div>
+                                    <div class="single-info">
+                                        <h5>#2 US</h5>
+                                        <p class="mdr">Play Store</p>
+                                    </div>
+                                </div>
+                                <div class="details-area">
+                                    <p>Taste diamond shine of casual games and try ... <a href="#">read more</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Feature Games end -->
+
+    <!-- All Games start -->
+    <section class="all-games">
+        <div class="overlay pt-120 pb-120">
+            <div class="container wow fadeInUp">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-header text-center">
+                            <h5 class="sub-title">All Games</h5>
+                            <h2 class="title">We Aim to Make the Most Exciting Games</h2>
+                            <p>Over 120 million people play our games every month. Life is more fun when you play games</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row cus-mar">
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/all-games-image-1.png" alt="image">
+                            </div>
+                            <h6>Dead Cell</h6>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/all-games-image-2.png" alt="image">
+                            </div>
+                            <h6>Epic RPG Games</h6>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/all-games-image-3.png" alt="image">
+                            </div>
+                            <h6>Idle Sports City</h6>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/all-games-image-4.png" alt="image">
+                            </div>
+                            <h6>Hill of Steel</h6>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/all-games-image-5.png" alt="image">
+                            </div>
+                            <h6>Tank Hero</h6>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/all-games-image-6.png" alt="image">
+                            </div>
+                            <h6>Knife Hit</h6>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/all-games-image-7.png" alt="image">
+                            </div>
+                            <h6>Fruit Master</h6>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/all-games-image-8.png" alt="image">
+                            </div>
+                            <h6>Fishdom</h6>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/all-games-image-9.png" alt="image">
+                            </div>
+                            <h6>Pooking</h6>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/all-games-image-10.png" alt="image">
+                            </div>
+                            <h6>Lintrix</h6>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/all-games-image-11.png" alt="image">
+                            </div>
+                            <h6>Sweet Crossing</h6>
+                        </div>
+                    </div>
+                    <div class="col-xxl-2 col-xl-3 col-md-4 col-sm-6">
+                        <div class="single-box">
+                            <div class="img-area">
+                                <img src="assets/images/all-games-image-12.png" alt="image">
+                            </div>
+                            <h6>Shadow fight 2</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- All Games end -->
+
+    <!-- Testimonials start -->
+    <section class="testimonials">
+        <div class="overlay pt-120">
+            <div class="container">
+                <div class="row justify-content-center align-items-center">
+                    <div class="col-lg-6">
+                        <div class="section-header text-center">
+                            <h5 class="sub-title">Testimonials</h5>
+                            <h2 class="title">What Our Players Say</h2>
+                            <p>Over 120 million people play our games every month. Life is more fun when you play games</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-carousel">
+                    <div class="single-slide">
+                        <div class="single-content">
+                            <div class="start-area">
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                            </div>
+                            <p class="xlr">"Fun, simple progression. Art style is cute, doesn't require a whole lot of thought so it's good to just sit and relax."</p>
+                            <div class="profile-area d-flex align-items-center">
+                                <div class="icon-area">
+                                    <img src="assets/images/testimonials-image-1.png" alt="image">
+                                </div>
+                                <div class="text-area">
+                                    <h6>Joey Roberts</h6>
+                                    <p class="mdr">June 15, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-slide">
+                        <div class="single-content">
+                            <div class="start-area">
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                            </div>
+                            <p class="xlr">"Fun, simple progression. Art style is cute, doesn't require a whole lot of thought so it's good to just sit and relax."</p>
+                            <div class="profile-area d-flex align-items-center">
+                                <div class="icon-area">
+                                    <img src="assets/images/testimonials-image-2.png" alt="image">
+                                </div>
+                                <div class="text-area">
+                                    <h6>Tim Owen</h6>
+                                    <p class="mdr">June 15, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-slide">
+                        <div class="single-content">
+                            <div class="start-area">
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                            </div>
+                            <p class="xlr">"Fun, simple progression. Art style is cute, doesn't require a whole lot of thought so it's good to just sit and relax."</p>
+                            <div class="profile-area d-flex align-items-center">
+                                <div class="icon-area">
+                                    <img src="assets/images/testimonials-image-3.png" alt="image">
+                                </div>
+                                <div class="text-area">
+                                    <h6>Dana Bowen</h6>
+                                    <p class="mdr">June 15, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="single-slide">
+                        <div class="single-content">
+                            <div class="start-area">
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                                <a href="javascript:void(0)"><i class="fas fa-star"></i></a>
+                            </div>
+                            <p class="xlr">"Fun, simple progression. Art style is cute, doesn't require a whole lot of thought so it's good to just sit and relax."</p>
+                            <div class="profile-area d-flex align-items-center">
+                                <div class="icon-area">
+                                    <img src="assets/images/testimonials-image-2.png" alt="image">
+                                </div>
+                                <div class="text-area">
+                                    <h6>Tim Owen</h6>
+                                    <p class="mdr">June 15, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Testimonials end -->
+
+    <!-- Support start -->
+    <section class="support-section">
+        <div class="overlay pt-120 pb-120">
+            <div class="container wow fadeInUp">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-xxl-5 col-xl-5 order-xl-0 order-1">
+                        <div class="sec-img">
+                            <img src="assets/images/support-illus.png" alt="image">
+                        </div>
+                    </div>
+                    <div class="col-xxl-6 col-xl-7">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="single-box">
+                                    <div class="img-area">
+                                        <img src="assets/images/icon/support-icon-1.png" alt="icon">
+                                    </div>
+                                    <h4>Contact</h4>
+                                    <p>Can't find what you're looking for? We're happy to help you!</p>
+                                    <a href="contact.html" class="cmn-btn alt">Contact US</a>
+                                </div>       
+                            </div>
+                            <div class="col-md-6">
+                                <div class="single-box">
+                                    <div class="img-area">
+                                        <img src="assets/images/icon/support-icon-2.png" alt="icon">
+                                    </div>
+                                    <h4>FAQ</h4>
+                                    <p>The things you need to know to start Playing Games.</p>
+                                    <a href="faqs.html" class="cmn-btn alt">Go To FAQ</a>
+                                </div>       
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Support end -->
+
+    <!-- Footer Area Start -->
+    <footer class="footer-section">
+        <img src="assets/images/footer-illus.png" class="w-100" alt="image">
         <div class="container">
-            <p>© 2024 Gamazen. All rights reserved.</p>
-            <ul>
-                <li><a href="privacy.html">Privacy Policy</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+            <div class="row justify-content-center">
+                <div class="col-lg-10">
+                    <div class="footer-form">
+                        <div class="section-area mb-30 text-center">
+                            <h3 class="title">To Get Update New Games!</h3>
+                            <p>Subscribe to get updated on future game releases</p>
+                        </div>
+                        <form action="#">
+                            <div class="form-group input-area d-flex align-items-center">
+                                <input type="text" placeholder="Enter your email">
+                                <button class="btn-area"><img src="assets/images/icon/send-icon.png" alt="icon"></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-area pt-120">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="footer-top d-flex align-items-center justify-content-between">
+                            <a href="index.html">
+                                <img src="assets/images/logo.png" class="logo" alt="logo">
+                            </a>
+                            <div class="footer-box">
+                                <ul class="footer-link d-flex align-items-center gap-4">
+                                    <li><a href="games.html">Game</a></li>
+                                    <li><a href="about-us.html">About Us</a></li>
+                                    <li><a href="careers.html">Careers</a></li>
+                                    <li><a href="contact.html">Contact</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="row justify-content-between align-items-center">
+                        <div class="col-lg-8 d-flex justify-content-center justify-content-lg-start order-lg-0 order-1">
+                            <div class="copyright">
+                                <p>Copyright © <span class="currentYear"></span> <a href="#">XMIRO</a>. All rights reserved. Design by <a href="https://themeforest.net/user/pixelaxis">PIXELAXIS</a></p>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4 d-flex justify-content-center justify-content-lg-end">
+                            <div class="social">
+                                <ul class="footer-link gap-2 d-flex align-items-center">
+                                    <li><a href="javascript:void(0)"><i class="fb fab fa-facebook-f"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="in fab fa-linkedin-in"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-google-play"></i></a></li>
+                                    <li><a href="javascript:void(0)"><i class="fab fa-apple"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+    <!-- Footer Area End -->
+
+    <!--==================================================================-->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/fontawesome.js"></script>
+    <script src="assets/js/plugin/slick.js"></script>
+    <script src="assets/js/plugin/counter.js"></script>
+    <script src="assets/js/plugin/waypoint.min.js"></script>
+    <script src="assets/js/plugin/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/plugin/wow.min.js"></script>
+    <script src="assets/js/plugin/plugin.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
