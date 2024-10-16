@@ -2,62 +2,90 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #333;
+    background-color: #1e0139; /* Dark purple background */
     color: #fff;
-    padding: 20px;
 }
 
-header h1 {
-    display: inline-block;
+.container {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
 }
 
-header nav {
-    float: right;
-}
-
-header nav ul {
-    list-style: none;
-}
-
-header nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-header nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.hero {
-    background-color: #5c6bc0;
-    color: #fff;
-    padding: 50px 0;
+h2 {
     text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
 }
 
-.featured-games, .games, .testimonials, .privacy-policy {
-    padding: 40px 0;
+p {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+
+.featured-games {
+    position: relative;
+    padding: 50px 0;
+}
+
+.hero-left, .hero-right {
+    position: absolute;
+    top: 0;
+    width: 200px;
+}
+
+.hero-left {
+    left: -150px;
+}
+
+.hero-right {
+    right: -150px;
 }
 
 .games-grid {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.game {
+    background-color: #340861; /* Dark background for game cards */
+    padding: 20px;
+    border-radius: 12px;
     text-align: center;
+    width: 250px;
 }
 
 .game img {
     width: 150px;
     height: 150px;
+    object-fit: contain;
+    margin-bottom: 10px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    text-align: center;
+.game h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
 }
+
+.game p {
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.game a {
+    background-color: #f99b3d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.game a:hover {
+    background-color: #ffae5b;
+}
+
+/* Add any additional styling for effects */
