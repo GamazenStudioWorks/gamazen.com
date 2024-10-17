@@ -879,6 +879,16 @@ label {
   top: 30px;
 }
 
+
+  a.custom-link {
+    color: #007bff; /* Change to your desired color */
+    text-decoration: underline; /* This adds the underline */
+  }
+  a.custom-link:hover {
+    color: #0056b3; /* Change to a darker color on hover */
+  }
+
+
 .banner-section .overlay {
   background-image: url(../images/index-bg.png);
   background-repeat: no-repeat;
